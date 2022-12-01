@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import { useParams } from "react-router-dom";
 
 const Diary = () => {
-  return (
-    <div>다이어리 상세 페이지</div>
-  )
-}
+  const { id } = useParams();
 
-export default Diary
+  return <div>다이어리 상세 페이지</div>;
+};
+
+export default Diary;
