@@ -39,7 +39,7 @@ body {
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
-  font-size: 17px;
+  font-size: 15px;
   white-space: nowrap;
 }
 
@@ -73,7 +73,7 @@ header > div {
 
 header .head_text {
   width: 50%;
-  font-size: 25px;
+  font-size: 21px;
   font-weight: 700;
   justify-content: center;
 }
@@ -111,7 +111,7 @@ header .head_btn_right {
   background: #ececec;
   padding: 10px 20px;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 /* DiaryItem */
@@ -169,7 +169,7 @@ header .head_btn_right {
 }
 
 .DiaryItem .diary_content_preview {
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .DiaryItem .btn_wrapper {
@@ -187,7 +187,7 @@ header .head_btn_right {
 }
 
 .DiaryEditor h2 {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 700;
 }
 
@@ -290,7 +290,7 @@ header .head_btn_right {
 }
 
 .DiaryPage h2 {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 700;
 }
 
@@ -306,8 +306,7 @@ header .head_btn_right {
 }
 
 .DiaryPage .emotion_descript {
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 15px;
   color: #fff;
 }
 
