@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
-import { useContext } from "react";
-import { useState } from "react";
+import React, { useEffect, useContext, useState,  } from "react";
 import { DiaryStateContext } from "../App";
 import DiaryList from "../component/DiaryList";
 import Mybutton from "../component/Mybutton";

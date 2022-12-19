@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap');
 
 body {
+  font-family: 'Noto Sans KR', sans-serif;
   background: #f6f6f6;
   display: flex;
   justify-content: center;
@@ -173,4 +174,104 @@ header .head_btn_right {
 
 .DiaryItem .btn_wrapper {
   min-width: 70px;
+}
+
+/* DiaryEditor */
+
+.DiaryEditor {
+
+}
+
+.DiaryEditor section {
+  margin: 0 0 40px 0;
+}
+
+.DiaryEditor h2 {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.DiaryEditor .input_date {
+  border: none;
+  border-radius: 5px;
+  background: #ececec;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 17px;
+} 
+
+.DiaryEditor .emotion_list_wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 2%;
+}
+
+.DiaryEditor textarea {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 17px;
+  background: #ececec;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 200px;
+  resize: vertical;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.DiaryEditor .control_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* EmotionItem */
+
+.EmotionItem {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.EmotionItem img {
+  width: 50%;
+  margin: 0 0 10px 0;
+}
+
+.EmotionItem span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.EmotionItem_off {
+  background: #ececec;
+}
+
+.EmotionItem_on_1 {
+  background: #64c964;
+  color: #fff;
+}
+
+.EmotionItem_on_2 {
+  background: #9dd772;
+  color: #fff;
+}
+
+.EmotionItem_on_3 {
+  background: #fdce17;
+  color: #fff;
+}
+
+.EmotionItem_on_4 {
+  background: #fd8446;
+  color: #fff;
+}
+
+.EmotionItem_on_5 {
+  background: #fd565f;
+  color: #fff;
 }
