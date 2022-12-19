@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState,  } from "react";
+import React, { useEffect, useContext, useState } from "react";
 import { DiaryStateContext } from "../App";
 import DiaryList from "../component/DiaryList";
 import Mybutton from "../component/Mybutton";
@@ -21,7 +21,10 @@ const Home = () => {
       const lastDay = new Date(
         curDate.getFullYear(),
         curDate.getMonth() + 1,
-        0
+        0,
+        23,
+        59,
+        59
       ).getTime();
 
       setData(

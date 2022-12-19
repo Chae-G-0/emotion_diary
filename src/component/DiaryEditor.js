@@ -1,42 +1,11 @@
-import React, { useState, useRef, useContext } from "react";
-import { useEffect } from "react";
+import React, { useState, useRef, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { DiaryDispatchContext } from "../App";
+import { getStringDate } from "../util/data";
+import { emotionList } from "../util/emotion";
 import EmotionItem from "./EmotionItem";
 import Mybutton from "./Mybutton";
 import MyHeader from "./MyHeader";
-
-const emotionList = [
-  {
-    emotion_id: 1,
-    emotion_img: process.env.PUBLIC_URL + `/assets/emotion1.png`,
-    emotion_descript: "완전 좋음",
-  },
-  {
-    emotion_id: 2,
-    emotion_img: process.env.PUBLIC_URL + `/assets/emotion2.png`,
-    emotion_descript: "좋음",
-  },
-  {
-    emotion_id: 3,
-    emotion_img: process.env.PUBLIC_URL + `/assets/emotion3.png`,
-    emotion_descript: "그럭저럭",
-  },
-  {
-    emotion_id: 4,
-    emotion_img: process.env.PUBLIC_URL + `/assets/emotion4.png`,
-    emotion_descript: "나쁨",
-  },
-  {
-    emotion_id: 5,
-    emotion_img: process.env.PUBLIC_URL + `/assets/emotion5.png`,
-    emotion_descript: "끔찍",
-  },
-];
-
-const getStringDate = (date) => {
-  return date.toISOString().slice(0, 10);
-};
 
 const DiaryEditor = ({ isEdit, originData }) => {
   const contentRef = useRef();
@@ -58,7 +27,7 @@ const DiaryEditor = ({ isEdit, originData }) => {
         isEdit ? "일기를 수정하시겠습니까?" : "새로운 일기를 작성하시겠습니까?"
       )
     ) {
-      if (isEdit) {
+      if (!isEdit) {
         onCreate(date, content, emotion);
       } else {
         onEdit(originData.id, date, content, emotion);
