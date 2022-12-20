@@ -10,8 +10,8 @@ const sortOptionList = [
 
 const filterOptionList = [
   { value: "all", name: "전부 다" },
-  { value: "good", name: "좋은 감정만" },
-  { value: "bad", name: "안 좋은 감정만" },
+  { value: "good", name: "좋은 감정" },
+  { value: "bad", name: "나쁜 감정" },
 ];
 
 const ControlMenu = React.memo(({ value, onChange, optionList }) => {

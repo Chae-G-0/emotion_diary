@@ -11,7 +11,7 @@ const Edit = () => {
 
   useEffect(() => {
     const titleElement = document.getElementsByTagName("title")[0];
-    titleElement.innerHTML = `감정 일기장 - ${id+1}번째 일기 수정`;
+    titleElement.innerHTML = `감정 일기장 - ${id}번째 일기 수정`;
   }, []);
 
   useEffect(() => {

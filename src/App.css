@@ -38,8 +38,8 @@ body {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 15px;
+  padding: 10px 15px;
+  font-size: 13px;
   white-space: nowrap;
 }
 
@@ -54,7 +54,7 @@ body {
 }
 
 .Mybutton_negative {
-  background: #dc3545;
+  background: #ed5c6b;
   color: #fff;
 }
 
@@ -73,7 +73,7 @@ header > div {
 
 header .head_text {
   width: 50%;
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 700;
   justify-content: center;
 }
@@ -109,9 +109,10 @@ header .head_btn_right {
   border: none;
   border-radius: 5px;
   background: #ececec;
-  padding: 10px 20px;
+  padding: 10px 15px;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 13px;
+  line-height: 30px;
 }
 
 /* DiaryItem */
@@ -125,7 +126,7 @@ header .head_btn_right {
 
 .DiaryItem .emotion_img_wrapper {
   cursor: pointer;
-  min-width: 120px;
+  min-width: 25%;
   height: 80px;
   border-radius: 5px;
   display: flex;
@@ -133,7 +134,7 @@ header .head_btn_right {
 }
 
 .DiaryItem .emotion_img_wrapper img {
-  width: 50%;
+  width: 75%;
 }
 
 .DiaryItem .emotion_img_wrapper_1 {
@@ -159,12 +160,12 @@ header .head_btn_right {
 .DiaryItem .info_wrapper {
   flex-grow: 1;
   cursor: pointer;
-  margin: 0 0 0 20px;
+  margin: 0 15px;
 }
 
 .DiaryItem .diary_date {
   font-weight: 700;
-  font-size: 21px;
+  font-size: 17px;
   margin: 0 0 5px 0;
 }
 
@@ -173,7 +174,7 @@ header .head_btn_right {
 }
 
 .DiaryItem .btn_wrapper {
-  min-width: 70px;
+  min-width: 25%;
 }
 
 /* DiaryEditor */
@@ -187,8 +188,9 @@ header .head_btn_right {
 }
 
 .DiaryEditor h2 {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 700;
+  margin: 10px 0;
 }
 
 .DiaryEditor .input_date {
@@ -197,7 +199,7 @@ header .head_btn_right {
   background: #ececec;
   padding: 10px 20px;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 15px;
 } 
 
 .DiaryEditor .emotion_list_wrapper {
@@ -208,11 +210,11 @@ header .head_btn_right {
 
 .DiaryEditor textarea {
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 17px;
+  font-size: 15px;
   background: #ececec;
   box-sizing: border-box;
   width: 100%;
-  min-height: 200px;
+  min-height: 150px;
   resize: vertical;
   border: none;
   border-radius: 5px;
@@ -243,7 +245,7 @@ header .head_btn_right {
 }
 
 .EmotionItem span {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
 }
 
