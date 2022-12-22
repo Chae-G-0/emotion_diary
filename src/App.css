@@ -129,12 +129,13 @@ header .head_btn_right {
   min-width: 25%;
   height: 80px;
   border-radius: 5px;
+  flex: 1;
   display: flex;
   justify-content: center;
 }
 
 .DiaryItem .emotion_img_wrapper img {
-  width: 75%;
+  max-width: 100%;
 }
 
 .DiaryItem .emotion_img_wrapper_1 {
@@ -158,7 +159,7 @@ header .head_btn_right {
 }
 
 .DiaryItem .info_wrapper {
-  flex-grow: 1;
+  flex: 2;
   cursor: pointer;
   margin: 0 15px;
 }
@@ -175,6 +176,11 @@ header .head_btn_right {
 
 .DiaryItem .btn_wrapper {
   min-width: 25%;
+  flex: 1;
+}
+
+.DiaryItem .btn_wrapper .Mybutton {
+  width: 100%;
 }
 
 /* DiaryEditor */
@@ -284,7 +290,7 @@ header .head_btn_right {
 
 .DiaryPage section {
   width: 100%;
-  margin: 0 0 100px 0;
+  margin: 0 0 60px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
